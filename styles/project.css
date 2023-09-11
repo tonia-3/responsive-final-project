@@ -1,0 +1,14 @@
+:root {
+  --primary-color: black;
+  --secondary-color: white;
+}
+body {
+  background-color: var(--primary-color);
+}
+.intro {
+  text-align: center;
+  padding: 240px 120px;
+  background-image: url("images/cathome.jpeg");
+  background-size: cover;
+  background-position: center;
+}
