@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 :root {
   --primary-color: black;
   --secondary-color: white;
@@ -5,60 +9,83 @@
 }
 body {
   background-color: var(--primary-color);
-  padding: 148px;
+  padding: 50px;
+  margin: auto;
 }
 .hero {
   background-image: url(/images/giraffe.jpeg);
   background-size: cover;
-  padding: 300px 200px;
+  padding: 250px;
   margin-bottom: 5%;
 }
-.hero h3 {
+.text-box {
   text-align: center;
+  top: 50%;
+  bottom: 50%;
+  width: 90%;
+}
+.text-box h3 {
   color: var(--secondary-color);
 }
-.hero h1 {
-  text-align: center;
+.text-box h1 {
   color: var(--secondary-color);
   font-size: 72px;
   font-family: var(--default-font);
-  margin-left: -30px;
 }
-.hero p {
-  text-align: center;
+.text-box p {
   color: var(--secondary-color);
   font-weight: 500;
+  margin-bottom: 5%;
 }
-.btn-primary {
-  padding: 20px 30px;
-  border: 50px;
-  margin-top: 20%;
-  margin-left: 40%;
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 30px;
+  border: 1px solid;
+  border-radius: 5px;
   font-size: 14px;
   font-family: var(--default-font);
   background: var(--secondary-color);
   color: var(--primary-color);
+  position: relative;
 }
-.card-img-top {
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3px;
+  margin: 3%;
+}
+.column {
+  padding: 5px;
+  margin: 0;
+}
+.column img {
   width: 100%;
-  height: 100%;
+  vertical-align: middle;
+  padding: 5px;
 }
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
   .hero {
     background-size: cover;
-    padding: 200px;
+    padding: 100px;
   }
-  .hero h1 {
-    font-size: 44px;
+  .text-box h1 {
+    font-size: 20px;
   }
 
-  .hero h3 {
-    font-size: 44px;
+  .text-box h3 {
+    font-size: 25px;
   }
-  .hero p {
+  .text-box p {
     display: none;
   }
-  .main {
+  .row {
+    margin: 0;
+    padding: 0;
+  }
+  .column {
+    flex: 100%;
     max-width: 100%;
   }
 }
