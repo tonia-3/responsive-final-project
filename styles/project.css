@@ -141,3 +141,16 @@ nav a:hover,
 nav li.active a {
   color: var(--secondary-color);
 }
+.gallery-section h1 {
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 64px;
+}
+.contact-section {
+  text-align: center;
+  color: var(--secondary-color);
+}
+.contact-section h4 {
+  color: rgb(231, 12, 114);
+  font-size: 18px;
+}
