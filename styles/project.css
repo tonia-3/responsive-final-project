@@ -137,8 +137,7 @@ nav a {
   transition: all 100ms ease-in-out;
 }
 
-nav a:hover,
-nav li.active a {
+nav a:hover {
   color: var(--secondary-color);
 }
 .gallery-section h1 {
