@@ -153,3 +153,16 @@ nav a:hover {
   color: rgb(231, 12, 114);
   font-size: 18px;
 }
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--secondary-color);
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: var(--primary-color);
+  background: var(--secondary-color);
+}
